@@ -4,13 +4,9 @@ import {
   Navbar,
   About,
   Tech,
-  Experience,
   Works,
   Feedbacks,
   Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
   StarsCanvas
 } from './components'
 const App = () => {

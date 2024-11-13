@@ -26,13 +26,17 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import carrent from "./chatapp.png";
 import jobit from "./jobit.png";
+import learning from "./learning-platform.png";
+import talent from "./talent-navigator.png";
 import tripguide from "./tripguide.png";
 
 export {
   logo,
   backend,
+  learning,
+  talent,
   creator,
   mobile,
   web,

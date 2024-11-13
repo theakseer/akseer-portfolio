@@ -19,10 +19,12 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    carrent as chatapp,
     jobit,
     tripguide,
     threejs,
+    talent,
+    learning,
   } from "../assets";
   
   export const navLinks = [
@@ -31,7 +33,7 @@ import {
       title: "About",
     },
     {
-      id: "work",
+      id: "works",
       title: "Work",
     },
     {
@@ -72,10 +74,10 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "TypeScript",
-    //   icon: typescript,
-    // },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
     {
       name: "React JS",
       icon: reactjs,
@@ -164,7 +166,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Akseer proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -172,7 +174,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Akseer does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -180,7 +182,7 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Akseer optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -190,9 +192,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Chat App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based chat application built on the MERN stack with Socket.io, allowing users to connect, chat in real-time, and manage conversations across various channels. It provides a convenient and efficient solution for seamless communication and collaboration.",
       tags: [
         {
           name: "react",
@@ -207,11 +209,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: chatapp,
+      source_code_link: "https://github.com/theakseer/MernChat",
     },
     {
-      name: "Job IT",
+      name: "Talent Navigator",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -220,7 +222,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -228,20 +230,20 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: talent,
+      source_code_link: "https://github.com/theakseer/TalentNavigator",
     },
     {
-      name: "Trip Guide",
+      name: "Learning Guide",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive learning platform that allows users to explore and enroll in courses, track progress, and access curated recommendations for popular subjects and help them academically.",
       tags: [
         {
-          name: "nextjs",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -249,7 +251,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: learning,
       source_code_link: "https://github.com/",
     },
   ];

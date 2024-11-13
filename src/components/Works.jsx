@@ -1,11 +1,9 @@
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
-
 import { styles } from '../style'
-import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+import ProjectCard from './ProjectCard'
 
 
 const Works = () => {
@@ -17,12 +15,20 @@ const Works = () => {
       </motion.div>
       <div className='w-full flex'>
         <motion.p
-        variants={fadeIn("","",0.1,1)}
-        className='mt-3 text-[17px] '
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-3 text-[17px] text-secondary max-w-3xl leading-[30px]'
         >
-
+          Transforming big ideas into user-friendly web solutions, my portfolio is proof that I can make pixels play nicely together. Whether it’s taming JavaScript into elegant code or convincing databases to yield data on command, I’ve got the full stack covered. On the front end,
+          I’m all about smooth interfaces and snappy designs, with frameworks like React in my toolkit. So, if you’re ready to turn that next big idea into a digital reality, take a look around!
         </motion.p>
-    </div>
+      </div>
+      <div className='mt-14 flex flex-wrap gap-7 '>
+        {
+          projects.map((project, index)=>(
+            <ProjectCard key={index} {...project}></ProjectCard>
+          ))
+        }
+      </div>
     </>
   )
 }
