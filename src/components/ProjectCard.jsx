@@ -16,14 +16,14 @@ const ProjectCard = ({ index, name, description, image, source_code_link, tags }
     easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   }
   return (
-    <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "tween", index*1.5, 0.75)}>
       <Tilt
         options={defaultOptions}
         className="bg-tertiary p-5 rounded-2xl w-full sm:w-[360px] h-full flex flex-col"
       >
-        <div className="w-full relative h-[230px]">
+        <div className="w-full relative h-[200px]">
           <img src={image} alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-top object-cover rounded-2xl"
           />
           <div className="absolute inset-0 card-img_hover flex justify-end m-3">
             <div className="black-gradient w-10 h-10 flex justify-center rounded-full items-center cursor-pointer"
